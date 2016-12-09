@@ -1,7 +1,7 @@
 
-[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="880" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
+[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="888" alt="Visit QuantNet">](http://quantlet.de/)
 
-## [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **ARRdenmer2d** [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/d3/ia)
+## [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **ARRdenmer2d** [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/)
 
 ```yaml
 
@@ -12,7 +12,7 @@ Published in : ARR - Academic Rankings Research
 Description : 'Plots contour plots of the 2 dimensional kernel density estimates of the main scores
 (HB, GS and RP) versus each other.'
 
-Keywords : 'plot, kernel, multivariate, visualization, data visualization, analysis, discriptive,
+Keywords : 'plot, kernel, multivariate, visualization, data visualization, analysis, descriptive,
 graphical representation, distribution'
 
 See also : 'ARRboxage, ARRboxgscit, ARRboxhb, ARRcormer, ARRdenmer3d, ARRhexage, ARRhexcit,

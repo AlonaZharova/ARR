@@ -1,8 +1,7 @@
 
-[<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/banner.png" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
+[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="888" alt="Visit QuantNet">](http://quantlet.de/)
 
-## [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **ARRboxhb** [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/d3/ia)
-
+## [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **ARRboxhb** [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/)
 
 ```yaml
 
@@ -10,32 +9,31 @@ Name of QuantLet : ARRboxhb
 
 Published in : ARR - Academic Rankings Research
 
-Description: 'Creates boxplots of the selected VWL and BWL Handelsblatt (HB) rankings 
-(Lifework (LW), Current research (CR), Under 40 (U40))
+Description : 'Creates boxplots of the selected VWL and BWL Handelsblatt (HB) rankings (Lifework
+(LW), Current research (CR), Under 40 (U40))'
 
-Keywords : 'plot, correlation, dependence, multivariate, multivariate analysis, visualization, 
-data visualization, analysis, discriptive methods, discriptive, graphical representation, 
-boxplot, descriptive-statistics, five number summary'
+Keywords : 'plot, correlation, dependence, multivariate, multivariate analysis, visualization, data
+visualization, analysis, descriptive-methods, descriptive, graphical representation, boxplot,
+descriptive-statistics, five number summary'
 
-See also : 'ARRboxage, ARRboxgscit, ARRcormer, ARRdenmer2d, ARRdenmer3d, ARRhexage, ARRhexcit, 
-ARRhexhin, ARRhismer, ARRmosage, ARRmosagegr, ARRmossub, ARRpcpgscit, ARRpcphb, ARRpcpmer, 
+See also : 'ARRboxage, ARRboxgscit, ARRcormer, ARRdenmer2d, ARRdenmer3d, ARRhexage, ARRhexcit,
+ARRhexhin, ARRhismer, ARRmosage, ARRmosagegr, ARRmossub, ARRpcpgscit, ARRpcphb, ARRpcpmer,
 ARRpcprp, ARRqrqqhb, ARRscaage, ARRscamer'
 
 Author : Alona Zharova
 
 Submitted : Sat, April 30 2016 by Alona Zharova, Marius Sterling
 
-Datafile : 'ARRdata.dat - The data set contains different researcher (3011 rows) of 
-either RePEc (77 columns), Handelsblatt (42 columns) ranking or both and their 
-Google Scholar data (16 columns) as well as age and subject fields (2 columns)'
+Datafile : 'ARRdata.dat - The data set contains different researcher (3218 rows) of either RePEc
+(77 columns), Handelsblatt (48 columns) ranking or both and their Google Scholar data (16 columns)
+as well as age and subject fields (2 columns)'
 
-Output : 'Boxplots for ranking scores of researchers within HB VWL sub-rankings (LW
-- 158 observations, CR - 28, U40 - 16; from 2010 to 2015) and HB BWL sub-rankings (LW - 128
-observations, CR - 37, U40 - 12; from 2009 to 2014). The red lines denote the median, 
-whereas the dotted lines display the mean.'
+Output : 'Boxplots for ranking scores of researchers within HB VWL sub-rankings (LW - 158
+observations, CR - 28, U40 - 16; from 2010 to 2015) and HB BWL sub-rankings (LW - 128 observations,
+CR - 37, U40 - 12; from 2009 to 2014). The red lines denote the median, whereas the dotted lines
+display the mean.'
 
 ```
-
 
 <img src="ARRboxhb_VWL_LW.png" width="290" />
 <img src="ARRboxhb_VWL_CR.png" width="290" />
@@ -44,30 +42,30 @@ whereas the dotted lines display the mean.'
 <img src="ARRboxhb_BWL_CR.png" width="290" />
 <img src="ARRboxhb_BWL_U40.png" width="290" />
 
-```r
 
-
+### MATLAB Code:
+```matlab
 %% Clearing all variables
 clear all; clc;
 %% Image settings
-fonttype      = 'Helvetica';
-fontsize      = 22;
-fontsize_axes = 16;
-papersize     = [9 6];
+fonttype      = 'Times New Roman';
+fontsize      = 14;
+fontsize_axes = 10;
+papersize     = [6 4];
 %% Data input
-merge        = readtable('ARRdata.dat','Delimiter',';');
+merge = readtable('ARRdata.dat','Delimiter',';');
 %% Function for data selection
 substrmatch  = @(x,y) ~cellfun(@isempty,strfind(y,x));
 findmatching = @(x,y) y(substrmatch(x,y));
 %% Data selection
 x        = sort(findmatching('hb_vwl',findmatching('lw_score',merge.Properties.VariableNames)));
-x        = x(2:3); % due to the fact that there are no scores for LW VWL2010 we need to neglect these
+x        = x(2:4); % due to the fact that there are no scores for LW VWL2010 we need to neglect these
 TF       = ismissing(merge(:,x));
 z1       = table2array(merge(~any(TF,2),x));
 %% Setting label names
 xlabel   = 'LW';
 ylabel   = 'VWL';
-label    = {'2011','2013'};
+label    = {'2011','2013','2015'};
 %% Naming boxplot
 filename = 'ARRboxhb_VWL_LW';
 %% Function for boxplot (to be saved in a separate Matlab file in the same folder)
@@ -100,8 +98,8 @@ ARRboxfun(z1,papersize,label,fontsize,fontsize_axes,fonttype,filename,xlabel,yla
 x        = sort(findmatching('hb_vwl',findmatching('cr_score',merge.Properties.VariableNames)));
 TF       = ismissing(merge(:,x));
 z2       = table2array(merge(~any(TF,2),x));
-xlabel   = 'CR';
-label    = {'2010','2011','2013'};
+xlabel   ='CR';
+label    = {'2010','2011','2013','2015'};
 filename = 'ARRboxhb_VWL_CR';
 ylabel   = ' ';
 ARRboxfun(z2,papersize,label,fontsize,fontsize_axes,fonttype,filename,xlabel,ylabel)
@@ -110,7 +108,7 @@ x        = sort(findmatching('hb_vwl',findmatching('u40_score',merge.Properties.
 TF       = ismissing(merge(:,x));
 z3       = table2array(merge(~any(TF,2),x));
 xlabel   = 'U40';
-label    = {'2010','2011','2013'};
+label    = {'2010','2011','2013','2015'};
 filename = 'ARRboxhb_VWL_U40';
 ylabel   = ' ';
 ARRboxfun(z3,papersize,label,fontsize,fontsize_axes,fonttype,filename,xlabel,ylabel)
@@ -141,3 +139,5 @@ label    = {'2009','2012','2014'};
 filename = 'ARRboxhb_BWL_U40';
 ylabel   = ' ';
 ARRboxfun(z6,papersize,label,fontsize,fontsize_axes,fonttype,filename,xlabel,ylabel)
+
+```

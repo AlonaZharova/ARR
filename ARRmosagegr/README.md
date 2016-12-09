@@ -1,7 +1,7 @@
 
-[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="880" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
+[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="888" alt="Visit QuantNet">](http://quantlet.de/)
 
-## [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **ARRmosagegr** [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/d3/ia)
+## [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **ARRmosagegr** [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/)
 
 ```yaml
 
@@ -12,8 +12,8 @@ Published in : ARR - Academic Rankings Research
 Description : 'Produces the mosaic plot of Top-700 scientists of Handelsblatt (HB), RePEc (RP) and
 Google Scholar (GS) each one'
 
-Keywords : 'mosaic plot, plot, multivariate, data visualization, visualization, analysis,
-descriptive methods, graphical representation, descriptive statistics, descriptive, multivariate
+Keywords : 'mosaic-plot, plot, multivariate, data visualization, visualization, analysis,
+descriptive-methods, graphical representation, descriptive statistics, descriptive, multivariate
 analysis'
 
 See also : 'ARRboxage, ARRboxgscit, ARRboxhb, ARRcormer, ARRdenmer2d, ARRdenmer3d, ARRhexage,

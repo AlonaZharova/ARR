@@ -1,7 +1,7 @@
 
-[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="880" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
+[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="888" alt="Visit QuantNet">](http://quantlet.de/)
 
-## [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **ARRmosage** [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/d3/ia)
+## [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **ARRmosage** [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/)
 
 ```yaml
 
@@ -12,8 +12,8 @@ Published in : ARR - Academic Rankings Research
 Description : 'Produces the mosaic plot of number of researchers, when merging of Handelsblatt
 (HB), RePEc (RP) and Google Scholar (GS) rankings takes place'
 
-Keywords : 'mosaic plot, multivariate, data visualization, analysis, discriptive methods, graphical
-representation, discriptive, multivariate analysis'
+Keywords : 'mosaic-plot, multivariate, data visualization, analysis, descriptive-methods, graphical
+representation, descriptive, multivariate analysis'
 
 See also : 'ARRboxage, ARRboxgscit, ARRboxhb, ARRcormer, ARRdenmer2d, ARRdenmer3d, ARRhexage,
 ARRhexcit, ARRhexhin, ARRhismer, ARRmosagegr, ARRmossub, ARRpcpgscit, ARRpcphb, ARRpcpmer,
