@@ -9,7 +9,7 @@
 
 Authors: Alona Zharova, Andrija Mihoci and Wolfgang Karl Härdle
 
-Project: ARR - Academic Rankings Rersearch
+Project: ARR - Academic Rankings Research
 
 Title: Academic Ranking Scales in Economics: Prediction and Imputation
 
